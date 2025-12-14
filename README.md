@@ -1,4 +1,4 @@
-### 鸢尾花数据分类与可视化项目
+# 鸢尾花数据分类与可视化项目
 
 ## 项目概述
 
@@ -24,7 +24,7 @@
 
 ## 任务说明
 
-# 任务一：二维特征空间的三分类可视化
+### 任务一：二维特征空间的三分类可视化
 
 • 目标：比较5个分类器在花瓣特征（Petal Length, Petal Width）上的表现
 
@@ -38,7 +38,7 @@
 
   • task1_summary_probability_maps.png - 汇总概率分布图
 
-# 任务二：三维特征空间的二分类决策边界
+### 任务二：三维特征空间的二分类决策边界
 
 • 目标：在三维特征空间中可视化Setosa vs Virginica的二分类问题
 
@@ -48,7 +48,7 @@
 
 • 输出文件：task2_result.html - 交互式3D决策边界
 
-# 任务三：三维概率图可视化
+### 任务三：三维概率图可视化
 
 • 目标：展示分类器在三维空间中的概率分布和分类置信度
 
@@ -58,7 +58,7 @@
 
 • 输出文件：task3_result.html - 交互式3D概率图
 
-# 任务四：四维特征空间的综合分析与创新
+### 任务四：四维特征空间的综合分析与创新
 
 • 目标：使用全部四个特征进行三分类，结合先进的可视化技术
 
@@ -80,24 +80,24 @@
 
 ## 安装要求
 
-# Python环境要求
+### Python环境要求
 
 Python 3.7+
 
 
-# 必需库安装
+### 必需库安装
 
 pip install numpy matplotlib scikit-learn plotly pandas
 
 
-# 可选库（用于高级可视化）
+### 可选库（用于高级可视化）
 
 pip install seaborn plotly-express
 
 
 ## 快速开始
 
-# 运行单个任务
+### 运行单个任务
 
 运行任务一：二维特征分类器比较
 python task_1.py
@@ -132,14 +132,14 @@ python task_4.py
 
 ## 技术特点
 
-# 可视化技术创新
+### 可视化技术创新
 
 1. 多维数据降维可视化：使用PCA将高维数据投影到3D/2D空间
 2. 交互式3D图形：支持旋转、缩放的多角度观察
 3. 概率等值面可视化：显示分类置信度分布
 4. 决策边界动态展示：实时查看不同分类器的决策区域
 
-# 分析方法创新
+### 分析方法创新
 
 1. 原始空间训练 + 降维可视化：保持模型精度的同时实现有效可视化
 2. 交叉验证评估：提供更可靠的性能估计
@@ -148,7 +148,7 @@ python task_4.py
 
 ## 结果解读指南
 
-# 决策边界图解读
+### 决策边界图解读
 
 • 彩色区域：表示不同类别的决策区域
 
@@ -158,7 +158,7 @@ python task_4.py
 
 • 边界平滑度：反映模型的复杂度和泛化能力
 
-# 概率图解读
+### 概率图解读
 
 • 颜色深浅：表示分类置信度（颜色越深置信度越高）
 
@@ -168,7 +168,7 @@ python task_4.py
 
 • 过渡区域：模型不确定的区域，通常位于类别边界
 
-# 性能指标解读
+### 性能指标解读
 
 • 训练准确率：模型在训练集上的表现（可能过拟合）
 
@@ -178,11 +178,11 @@ python task_4.py
 
 • 交叉验证标准差：模型性能的稳定性
 
-# 扩展应用
+### 扩展应用
 
 ## 本项目的方法可以扩展到其他分类问题：
 
-# 更换数据集
+### 更换数据集
 
 from sklearn.datasets import load_wine, load_breast_cancer
 
@@ -195,7 +195,7 @@ cancer = load_breast_cancer()
 X, y = cancer.data, cancer.target
 
 
-# 添加新分类器
+### 添加新分类器
 
 from sklearn.naive_bayes import GaussianNB
 from sklearn.discriminant_analysis import QuadraticDiscriminantAnalysis
@@ -205,7 +205,7 @@ classifiers['Gaussian Naive Bayes'] = GaussianNB()
 classifiers['QDA'] = QuadraticDiscriminantAnalysis()
 
 
-# 自定义特征组合
+### 自定义特征组合
 
 #使用不同的特征组合
 feature_combinations = {
